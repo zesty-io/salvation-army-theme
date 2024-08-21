@@ -1,6 +1,6 @@
 # Project Setup
 
-This project uses `pnpm` as the package manager and `sass` to generate a minified Bootstrap CSS file.
+This project primarily uses `pnpm` as the package manager, but you can also use `npm` or other package managers if preferred. The project also uses `sass` to generate a minified Bootstrap CSS file
 
 ## Installation
 
