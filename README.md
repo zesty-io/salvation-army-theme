@@ -16,6 +16,18 @@ To generate the minified Bootstrap CSS file, run the following command:
 
 ```bash
 pnpm sass
+
+```
+
+## Using the Custom Bootstrap CSS
+
+To use the custom Bootstrap CSS file, include the following link in your HTML head tag
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/zesty-io/salvation-army-theme/styles/bootstrap.css"
+/>
 ```
 
 ## Previewing the Cheatsheet
