@@ -19,10 +19,3 @@ pnpm sass
 ```
 
 This will create the minified CSS file in the styles directory.
-
-project-root/
-├── styles/
-│ └── bootstrap.css
-├── node_modules/
-├── package.json
-└── ...
