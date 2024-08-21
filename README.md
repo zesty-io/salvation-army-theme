@@ -18,4 +18,16 @@ To generate the minified Bootstrap CSS file, run the following command:
 pnpm sass
 ```
 
-This will create the minified CSS file in the styles directory.
+## Previewing the Cheatsheet
+
+### Option 1: Open with a Browser
+
+To preview the cheatsheet, simply open the `index.html` file in your preferred browser.
+
+### Option 2: Use Live Server in VS Code
+
+1. Install the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in Visual Studio Code.
+2. Right-click on the `index.html` file in the file explorer.
+3. Select **"Open with Live Server"**.
+
+This will automatically open the `index.html` file in your browser and update the preview whenever you make changes.
