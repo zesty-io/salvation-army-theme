@@ -7,7 +7,11 @@ This project primarily uses `pnpm` as the package manager, but you can also use 
 First, install the necessary packages by running the following command:
 
 ```bash
-pnpm i
+pnpm install
+```
+or
+```bash
+npm install
 ```
 
 ## Generating Minified CSS
@@ -16,8 +20,12 @@ To generate the minified Bootstrap CSS file, run the following command:
 
 ```bash
 pnpm sass
-
 ```
+or
+```bash
+npm run sass
+```
+
 
 ## Using the Custom Bootstrap CSS
 
