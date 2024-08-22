@@ -25,21 +25,19 @@ $tsa-secondary-100: #77a9ee !default;
 $tsa-secondary-150: #61769c !default;
 $tsa-secondary-200: #002056 !default;
 
-// Opacity Colors
-$tsa-opacity-red: #eb253326 !default;
-$tsa-opacity-light-blue: #77a9ee26 !default;
-$tsa-opacity-success: #12825f26 !default;
-$tsa-opacity-warning: #f2ab5326 !default;
-$tsa-opacity-modal: #12121299 !default;
-$tsa-opacity-50: #1c1b1f80 !default;
-$tsa-opacity-30: #1c1b1f4d !default;
-$tsa-opacity-10: #1c1b1f26 !default;
-$tsa-opacity-shadow-elevation: #1212121a !default;
+// Success
+$tsa-success: #12825f !default;
+
+// Warning
+$tsa-warning: #f2ab53 !default;
+
+// Utilities
+$tsa-background-modal: #121212 !default;
+$tsa-photo-overlay: #1c1b1f !default;
 
 // Font Colors
 $tsa-light: #fff !default;
 $tsa-dark: #575757 !default;
-$tsa-dark-50: rgba(28, 27, 31, 0.6) !default;
 $tsa-dark-100: #1c1b1f !default;
 
 // scss-docs-start gray-color-variables
@@ -355,8 +353,23 @@ $theme-colors: (
   'danger': $danger,
   'light': $light,
   'dark': $dark,
-  'tsa': $tsa-primary-50
+  'tsa-primary-50': $tsa-primary-50,
+  'tsa-primary-100': $tsa-primary-100,
+  'tsa-primary-200': $tsa-primary-200,
+  'tsa-primary-300': $tsa-primary-300,
+  'tsa-primary-400': $tsa-primary-400,
+  'tsa-secondary-50': $tsa-secondary-50,
+  'tsa-secondary-100': $tsa-secondary-100,
+  'tsa-secondary-150': $tsa-secondary-150,
+  'tsa-secondary-200': $tsa-secondary-200,
+  'tsa-background-modal': $tsa-background-modal,
+  'tsa-photo-overlay': $tsa-photo-overlay,
+  'tsa-success': $tsa-success,
+  'tsa-warning': $tsa-warning,
+  'tsa-dark': $tsa-dark,
+  'tsa-dark-100': $tsa-dark-100
 ) !default;
+
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-text-variables
