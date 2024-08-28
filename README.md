@@ -46,6 +46,21 @@ The colors defined in the `$theme-colors` map can be utilized in your HTML by ap
   - `bg-dark-100`
   - `bg-light`
 
+### Using Custom Font Size Classes
+
+The font sizes defined in the `$font-sizes` map can be utilized in your HTML by applying the corresponding `fs-{size}` classes. Here’s how to use them:
+
+**Font Sizes:**
+
+- `fs-1`
+- `fs-2`
+- `fs-3`
+- `fs-4`
+- `fs-5`
+- `fs-6`
+- `fs-7`
+- `fs-8`
+
 ## Generating Minified CSS
 
 To generate the minified Bootstrap CSS file, run the following command:
