@@ -5,41 +5,6 @@
 
 // Color system
 
-// ***** Design Tokens (Colors) *****
-
-// Background
-$tsa-bg-card: #fff !default;
-$tsa-bg: #d9d9d9 !default;
-$tsa-bg-area: #efefef !default;
-
-// Primary
-$tsa-primary-50: #ffebeb !default;
-$tsa-primary-100: #ff838b !default;
-$tsa-primary-200: #eb2533 !default;
-$tsa-primary-300: #c5000e !default;
-$tsa-primary-400: #9e121c !default;
-
-// Secondary
-$tsa-secondary-50: #d7e9ff !default;
-$tsa-secondary-100: #77a9ee !default;
-$tsa-secondary-150: #61769c !default;
-$tsa-secondary-200: #002056 !default;
-
-// Success
-$tsa-success: #12825f !default;
-
-// Warning
-$tsa-warning: #f2ab53 !default;
-
-// Utilities
-$tsa-background-modal: #121212 !default;
-$tsa-photo-overlay: #1c1b1f !default;
-
-// Font Colors
-$tsa-light: #fff !default;
-$tsa-dark: #575757 !default;
-$tsa-dark-100: #1c1b1f !default;
-
 // scss-docs-start gray-color-variables
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -347,11 +312,13 @@ $dark: $gray-900 !default;
 $theme-colors: (
   'primary': $primary,
   'secondary': $secondary,
+  'success': $success,
   'info': $info,
+  'warning': $warning,
   'danger': $danger,
-  'light': $light
+  'light': $light,
+  'dark': $dark
 ) !default;
-
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-text-variables
@@ -445,22 +412,9 @@ $spacers: (
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
-  3: $spacer * 0.75,
-  4: $spacer,
-  5: $spacer * 1.25,
-  6: $spacer * 1.5,
-  7: $spacer * 1.75,
-  8: $spacer * 2,
-  9: $spacer * 2.25,
-  10: $spacer * 2.5,
-  11: $spacer * 2.75,
-  12: $spacer * 3,
-  14: $spacer * 3.5,
-  15: $spacer * 3.75,
-  16: $spacer * 4,
-  17: $spacer * 4.25,
-  18: $spacer * 5,
-  19: $spacer * 6
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -528,11 +482,11 @@ $paragraph-margin-bottom: 1rem !default;
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
   xs: 0,
-  sm: 360px,
+  sm: 576px,
   md: 768px,
-  lg: 1280px,
-  xl: 1536px,
-  xxl: 1800px
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -545,11 +499,11 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 360px,
-  md: 768px,
-  lg: 1280px,
-  xl: 1536px,
-  xxl: 1800px
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -675,14 +629,12 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 5 !default;
-$h2-font-size: $font-size-base * 3.75 !default;
-$h3-font-size: $font-size-base * 3 !default;
-$h4-font-size: $font-size-base * 2.125 !default;
-$h5-font-size: $font-size-base * 1.175 !default;
-$h6-font-size: $font-size-base * 1.5 !default;
-$title-lg-font-size: $font-size-base * 1.25 !default;
-$body-xl-font-size: $font-size-base * 1.375 !default;
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -692,9 +644,7 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size,
-  7: $title-lg-font-size,
-  8: $body-xl-font-size
+  6: $h6-font-size
 ) !default;
 // scss-docs-end font-sizes
 

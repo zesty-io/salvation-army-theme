@@ -30,6 +30,7 @@ $tsa-photo-overlay: #1c1b1f;
 $tsa-light: #fff;
 $tsa-dark: #575757;
 $tsa-dark-100: #1c1b1f;
+$gray-100: #f8f9fa;
 
 $theme-colors: (
   'primary-50': $tsa-primary-50,
@@ -46,7 +47,8 @@ $theme-colors: (
   'success': $tsa-success,
   'warning': $tsa-warning,
   'dark': $tsa-dark,
-  'dark-100': $tsa-dark-100
+  'dark-100': $tsa-dark-100,
+  'light': $gray-100
 );
 
 // Spacings
@@ -72,6 +74,30 @@ $spacers: (
   17: $spacer * 4.25,
   18: $spacer * 5,
   19: $spacer * 6
+);
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 5;
+$h2-font-size: $font-size-base * 3.75;
+$h3-font-size: $font-size-base * 3;
+$h4-font-size: $font-size-base * 2.125;
+$h5-font-size: $font-size-base * 1.175;
+$h6-font-size: $font-size-base * 1.5;
+$title-lg-font-size: $font-size-base * 1.25;
+$body-xl-font-size: $font-size-base * 1.375;
+// scss-docs-end font-variables
+
+// scss-docs-start font-sizes
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $title-lg-font-size,
+  8: $body-xl-font-size
 );
 
 $grid-breakpoints: (
