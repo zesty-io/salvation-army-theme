@@ -65,19 +65,21 @@ The colors defined in the `$theme-colors` map can be utilized in your HTML by ap
 
 - **Primary Colors:**
 
-  - `bg-primary-50`.
+  - `bg-primary-50`
   - `bg-primary-100`
   - `bg-primary-200`
   - `bg-primary-300`
   - `bg-primary-400`
 
 - **Secondary Colors:**
+
   - `bg-secondary-50`
   - `bg-secondary-100`
   - `bg-secondary-150`
-  - `bg-secondary-200`.
+  - `bg-secondary-200`
+
 - **Other Colors:**
-  - `bg-background-modal`.
+  - `bg-background-modal`
   - `bg-photo-overlay`
   - `bg-success`
   - `bg-warning`
