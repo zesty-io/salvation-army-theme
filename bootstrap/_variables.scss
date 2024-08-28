@@ -349,22 +349,7 @@ $theme-colors: (
   'secondary': $secondary,
   'info': $info,
   'danger': $danger,
-  'light': $light,
-  'primary-50': $tsa-primary-50,
-  'primary-100': $tsa-primary-100,
-  'primary-200': $tsa-primary-200,
-  'primary-300': $tsa-primary-300,
-  'primary-400': $tsa-primary-400,
-  'secondary-50': $tsa-secondary-50,
-  'secondary-100': $tsa-secondary-100,
-  'secondary-150': $tsa-secondary-150,
-  'secondary-200': $tsa-secondary-200,
-  'background-modal': $tsa-background-modal,
-  'photo-overlay': $tsa-photo-overlay,
-  'success': $tsa-success,
-  'warning': $tsa-warning,
-  'dark': $tsa-dark,
-  'dark-100': $tsa-dark-100
+  'light': $light
 ) !default;
 
 // scss-docs-end theme-colors-map
@@ -690,12 +675,14 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h1-font-size: $font-size-base * 5 !default;
+$h2-font-size: $font-size-base * 3.75 !default;
+$h3-font-size: $font-size-base * 3 !default;
+$h4-font-size: $font-size-base * 2.125 !default;
+$h5-font-size: $font-size-base * 1.175 !default;
+$h6-font-size: $font-size-base * 1.5 !default;
+$title-lg-font-size: $font-size-base * 1.25 !default;
+$body-xl-font-size: $font-size-base * 1.375 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -705,7 +692,9 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $title-lg-font-size,
+  8: $body-xl-font-size
 ) !default;
 // scss-docs-end font-sizes
 

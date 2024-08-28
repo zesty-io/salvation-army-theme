@@ -1,0 +1,50 @@
+// Background
+$tsa-bg-card: #fff !default;
+$tsa-bg: #d9d9d9 !default;
+$tsa-bg-area: #efefef !default;
+
+// Primary
+$tsa-primary-50: #ffebeb !default;
+$tsa-primary-100: #ff838b !default;
+$tsa-primary-200: #eb2533 !default;
+$tsa-primary-300: #c5000e !default;
+$tsa-primary-400: #9e121c !default;
+
+// Secondary
+$tsa-secondary-50: #d7e9ff !default;
+$tsa-secondary-100: #77a9ee !default;
+$tsa-secondary-150: #61769c !default;
+$tsa-secondary-200: #002056 !default;
+
+// Success
+$tsa-success: #12825f !default;
+
+// Warning
+$tsa-warning: #f2ab53 !default;
+
+// Utilities
+$tsa-background-modal: #121212 !default;
+$tsa-photo-overlay: #1c1b1f !default;
+
+// Font Colors
+$tsa-light: #fff !default;
+$tsa-dark: #575757 !default;
+$tsa-dark-100: #1c1b1f !default;
+
+$theme-colors: (
+  'primary-50': $tsa-primary-50,
+  'primary-100': $tsa-primary-100,
+  'primary-200': $tsa-primary-200,
+  'primary-300': $tsa-primary-300,
+  'primary-400': $tsa-primary-400,
+  'secondary-50': $tsa-secondary-50,
+  'secondary-100': $tsa-secondary-100,
+  'secondary-150': $tsa-secondary-150,
+  'secondary-200': $tsa-secondary-200,
+  'background-modal': $tsa-background-modal,
+  'photo-overlay': $tsa-photo-overlay,
+  'success': $tsa-success,
+  'warning': $tsa-warning,
+  'dark': $tsa-dark,
+  'dark-100': $tsa-dark-100
+);
