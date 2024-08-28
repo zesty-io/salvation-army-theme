@@ -9,10 +9,16 @@ First, install the necessary packages by running the following command:
 ```bash
 pnpm install
 ```
+
 or
+
 ```bash
 npm install
 ```
+
+## Custom SASS Variables
+
+The custom SASS variables for the Bootstrap CSS file are defined in `bootstrap/abstracts/_variables.scss`. You can modify these variables to customize the Bootstrap styles according to your needs.
 
 ## Generating Minified CSS
 
@@ -21,11 +27,12 @@ To generate the minified Bootstrap CSS file, run the following command:
 ```bash
 pnpm sass
 ```
+
 or
+
 ```bash
 npm run sass
 ```
-
 
 ## Using the Custom Bootstrap CSS
 
