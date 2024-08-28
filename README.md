@@ -61,6 +61,17 @@ The font sizes defined in the `$font-sizes` map can be utilized in your HTML by 
 - `fs-7`
 - `fs-8`
 
+### Using Custom Box Shadow Classes
+
+The box shadows defined in your SASS file can be utilized in your HTML by applying the corresponding `shadow-{size}` classes. Here’s how to use them:
+
+**Box Shadows:**
+
+- `shadow`
+- `shadow-sm`
+- `shadow-lg`
+- `shadow-xl`
+
 ## Generating Minified CSS
 
 To generate the minified Bootstrap CSS file, run the following command:
