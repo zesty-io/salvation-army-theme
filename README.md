@@ -20,6 +20,32 @@ npm install
 
 The custom SASS variables for the Bootstrap CSS file are defined in `bootstrap/abstracts/_variables.scss`. You can modify these variables to customize the Bootstrap styles according to your needs.
 
+### Using Custom Background Classes
+
+The colors defined in the `$theme-colors` map can be utilized in your HTML by applying the corresponding `bg-{color-name}` classes. Here’s how to use them:
+
+- **Primary Colors:**
+
+  - `bg-primary-50`.
+  - `bg-primary-100`
+  - `bg-primary-200`
+  - `bg-primary-300`
+  - `bg-primary-400`
+
+- **Secondary Colors:**
+  - `bg-secondary-50`
+  - `bg-secondary-100`
+  - `bg-secondary-150`
+  - `bg-secondary-200`.
+- **Other Colors:**
+  - `bg-background-modal`.
+  - `bg-photo-overlay`
+  - `bg-success`
+  - `bg-warning`
+  - `bg-dark`
+  - `bg-dark-100`
+  - `bg-light`
+
 ## Generating Minified CSS
 
 To generate the minified Bootstrap CSS file, run the following command:
