@@ -1,35 +1,35 @@
 // Background
-$tsa-bg-card: #fff !default;
-$tsa-bg: #d9d9d9 !default;
-$tsa-bg-area: #efefef !default;
+$tsa-bg-card: #fff;
+$tsa-bg: #d9d9d9;
+$tsa-bg-area: #efefef;
 
 // Primary
-$tsa-primary-50: #ffebeb !default;
-$tsa-primary-100: #ff838b !default;
-$tsa-primary-200: #eb2533 !default;
-$tsa-primary-300: #c5000e !default;
-$tsa-primary-400: #9e121c !default;
+$tsa-primary-50: #ffebeb;
+$tsa-primary-100: #ff838b;
+$tsa-primary-200: #eb2533;
+$tsa-primary-300: #c5000e;
+$tsa-primary-400: #9e121c;
 
 // Secondary
-$tsa-secondary-50: #d7e9ff !default;
-$tsa-secondary-100: #77a9ee !default;
-$tsa-secondary-150: #61769c !default;
-$tsa-secondary-200: #002056 !default;
+$tsa-secondary-50: #d7e9ff;
+$tsa-secondary-100: #77a9ee;
+$tsa-secondary-150: #61769c;
+$tsa-secondary-200: #002056;
 
 // Success
-$tsa-success: #12825f !default;
+$tsa-success: #12825f;
 
 // Warning
-$tsa-warning: #f2ab53 !default;
+$tsa-warning: #f2ab53;
 
 // Utilities
-$tsa-background-modal: #121212 !default;
-$tsa-photo-overlay: #1c1b1f !default;
+$tsa-background-modal: #121212;
+$tsa-photo-overlay: #1c1b1f;
 
 // Font Colors
-$tsa-light: #fff !default;
-$tsa-dark: #575757 !default;
-$tsa-dark-100: #1c1b1f !default;
+$tsa-light: #fff;
+$tsa-dark: #575757;
+$tsa-dark-100: #1c1b1f;
 
 $theme-colors: (
   'primary-50': $tsa-primary-50,
@@ -51,7 +51,7 @@ $theme-colors: (
 
 // Spacings
 
-$spacer: 1rem !default;
+$spacer: 1rem;
 $spacers: (
   0: 0,
   1: $spacer * 0.25,
@@ -72,7 +72,7 @@ $spacers: (
   17: $spacer * 4.25,
   18: $spacer * 5,
   19: $spacer * 6
-) !default;
+);
 
 $grid-breakpoints: (
   xs: 0,
