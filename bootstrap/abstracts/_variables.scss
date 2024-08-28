@@ -30,7 +30,6 @@ $tsa-photo-overlay: #1c1b1f;
 $tsa-light: #fff;
 $tsa-dark: #575757;
 $tsa-dark-100: #1c1b1f;
-$gray-100: #f8f9fa;
 
 $theme-colors: (
   'primary-50': $tsa-primary-50,
@@ -48,8 +47,10 @@ $theme-colors: (
   'warning': $tsa-warning,
   'dark': $tsa-dark,
   'dark-100': $tsa-dark-100,
-  'light': $gray-100
+  'light': $tsa-light
 );
+
+$body-color: $tsa-dark-100;
 
 // Spacings
 
