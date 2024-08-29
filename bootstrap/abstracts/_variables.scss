@@ -143,4 +143,17 @@ $box-shadow-lg: 0px 4px 8px 0px rgba(36, 104, 147, 0.04);
 $box-shadow-xl: 0px 8px 12px 0px rgba(36, 104, 147, 0.04);
 
 // Buttons
-$btn-border-radius: $spacer * 0.5 8px;
+$btn-border-radius: 8px;
+$btn-padding-y: 12px;
+$btn-padding-x: 20px;
+$btn-font-size: 14px;
+
+$btn-border-radius-sm: 8px;
+$btn-padding-y-sm: $spacer * 0.75;
+$btn-padding-x-sm: $spacer * 1.25;
+$btn-font-size-sm: 14px;
+
+$btn-border-radius-lg: 8px;
+$btn-padding-y-lg: 16px;
+$btn-padding-x-lg: 24px;
+$btn-font-size-lg: 16px;
