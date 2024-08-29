@@ -7,9 +7,9 @@
 5. [Previewing the Cheatsheet](#previewing-the-cheatsheet)
 6. [Custom SASS Variables](#custom-sass-variables)
    - [Using Custom Background Classes](#using-custom-background-classes)
-7. [Using Custom Font Size Classes](#using-custom-font-size-classes)
-8. [Using Custom Opacity Classes](#using-custom-opacity-classes)
-9. [Using Custom Box Shadow Classes](#using-custom-box-shadow-classes)
+   - [Using Custom Font Size Classes](#using-custom-font-size-classes)
+   - [Using Custom Opacity Classes](#using-custom-opacity-classes)
+   - [Using Custom Box Shadow Classes](#using-custom-box-shadow-classes)
 
 # Project Setup
 
