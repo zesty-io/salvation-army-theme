@@ -1,1 +1,22 @@
-$custom-colors: ('');
+$custom-colors: (
+  'opacity-red': rgba($tsa-primary-200, 0.15),
+  'opacity-lightBlue': rgba($tsa-secondary-100, 0.15),
+  'opacity-success': rgba($tsa-success, 0.15),
+  'opacity-warning': rgba($tsa-warning, 0.15),
+  'dark-50': rgba($tsa-dark-100, 0.6),
+  'light-50': rgba($tsa-light, 0.7)
+);
+
+$utilities-text-colors: map-merge($utilities-text-colors, $custom-colors);
+
+$custom-bg-colors: (
+  'dark-50': rgba($tsa-dark-100, 0.6),
+  'modal': rgba($tsa-background-modal, 0.6),
+  'photo-overlay': rgba($tsa-dark-100, 0.5),
+  'opacity-red': rgba($tsa-primary-200, 0.15),
+  'opacity-lightBlue': rgba($tsa-secondary-100, 0.15),
+  'opacity-success': rgba($tsa-success, 0.15),
+  'opacity-warning': rgba($tsa-warning, 0.15)
+);
+
+$utilities-bg-colors: map-merge($utilities-bg-colors, $custom-bg-colors);
