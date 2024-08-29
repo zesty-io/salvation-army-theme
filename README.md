@@ -172,8 +172,21 @@ The box shadows defined in your SASS file can be utilized in your HTML by applyi
 Use the following classes to create buttons with basic styles:
 
 ```html
+<!-- Default Button Sizes -->
 <button class="btn btn-primary">Primary Button</button>
 <button class="btn btn-secondary">Secondary Button</button>
 <button class="btn btn-info">Info Button</button>
 <button class="btn btn-light">Light Button</button>
+
+<!-- Large Buttons -->
+<button class="btn btn-primary btn-lg">Primary Button</button>
+<button class="btn btn-secondary btn-lg">Secondary Button</button>
+<button class="btn btn-info btn-lg">Info Button</button>
+<button class="btn btn-light btn-lg">Light Button</button>
+
+<!-- Small Buttons -->
+<button class="btn btn-primary btn-sm">Primary Button</button>
+<button class="btn btn-secondary btn-sm">Secondary Button</button>
+<button class="btn btn-info btn-sm">Info Button</button>
+<button class="btn btn-light btn-sm">Light Button</button>
 ```
