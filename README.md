@@ -1,3 +1,16 @@
+## Table of Contents
+
+1. [Project Setup](#project-setup)
+2. [Installation](#installation)
+3. [Generating Minified CSS](#generating-minified-css)
+4. [Using the Custom Bootstrap CSS](#using-the-custom-bootstrap-css)
+5. [Previewing the Cheatsheet](#previewing-the-cheatsheet)
+6. [Custom SASS Variables](#custom-sass-variables)
+   - [Using Custom Background Classes](#using-custom-background-classes)
+7. [Using Custom Font Size Classes](#using-custom-font-size-classes)
+8. [Using Custom Opacity Classes](#using-custom-opacity-classes)
+9. [Using Custom Box Shadow Classes](#using-custom-box-shadow-classes)
+
 # Project Setup
 
 This project primarily uses `pnpm` as the package manager, but you can also use `npm` or other package managers if preferred. The project also uses `sass` to generate a minified Bootstrap CSS file
@@ -95,21 +108,21 @@ The font sizes defined in the `$font-sizes` and `$display-font-sizes` maps can b
 
 ### Heading Font Sizes:
 
-- Use `fs-1` for the `h1` font size.
-- Use `fs-2` for the `h2` font size.
-- Use `fs-3` for the `h3` font size.
-- Use `fs-4` for the `h4` font size.
-- Use `fs-5` for the `h5` font size.
-- Use `fs-6` for the `h6` font size.
-- Use `fs-7` for the large title font size.
+- Use `fs-1` for the `h1` font size (5rem).
+- Use `fs-2` for the `h2` font size (3.75rem).
+- Use `fs-3` for the `h3` font size (3rem).
+- Use `fs-4` for the `h4` font size (2.125rem).
+- Use `fs-5` for the `h5` font size (1.75rem).
+- Use `fs-6` for the `h6` font size (1.5rem).
+- Use `fs-7` for the large title font size (1.25rem).
 
 ### Body Text Font Sizes:
 
-- Use `display-1` for the extra-large body font size.
-- Use `display-2` for the large body font size.
-- Use `display-3` for the medium body font size.
-- Use `display-4` for the small body font size.
-- Use `display-5` for the caption font size.
+- Use `display-1` for the extra-large body font size (1.125rem).
+- Use `display-2` for the large body font size (1rem).
+- Use `display-3` for the medium body font size (0.875rem).
+- Use `display-4` for the small body font size (0.75rem).
+- Use `display-5` for the caption font size (0.625rem).
 
 ### Using Custom Opacity Classes
 
