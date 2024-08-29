@@ -10,6 +10,8 @@
    - [Using Custom Font Size Classes](#using-custom-font-size-classes)
    - [Using Custom Opacity Classes](#using-custom-opacity-classes)
    - [Using Custom Box Shadow Classes](#using-custom-box-shadow-classes)
+7. [Custom Button Components](#custom-button-components)
+   - [Basic Button Styles](#basic-button-styles)
 
 # Project Setup
 
@@ -162,3 +164,16 @@ The box shadows defined in your SASS file can be utilized in your HTML by applyi
 - Use `shadow-sm` for a small box shadow: `0px 1px 2px 0px rgba(36, 104, 147, 0.04)`.
 - Use `shadow-lg` for a large box shadow: `0px 4px 8px 0px rgba(36, 104, 147, 0.04)`.
 - Use `shadow-xl` for an extra-large box shadow: `0px 8px 12px 0px rgba(36, 104, 147, 0.04)`.
+
+# Custom Button Components
+
+### Basic Button Styles
+
+Use the following classes to create buttons with basic styles:
+
+```html
+<button class="btn btn-primary">Primary Button</button>
+<button class="btn btn-secondary">Secondary Button</button>
+<button class="btn btn-info">Info Button</button>
+<button class="btn btn-light">Light Button</button>
+```
