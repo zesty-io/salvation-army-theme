@@ -88,11 +88,11 @@ The colors defined in the `$theme-colors` map can be utilized in your HTML by ap
 - Use `bg-dark-100` for a background color of `#1c1b1f`.
 - Use `bg-light` for a background color of `#fff`.
 
-### Using Custom Font Size Classes
+## Using Custom Font Size Classes
 
-The font sizes defined in the `$font-sizes` map can be utilized in your HTML by applying the corresponding `fs-{size}` classes. Here’s how to use them:
+The font sizes defined in the `$font-sizes` and `$display-font-sizes` maps can be utilized in your HTML by applying the corresponding `fs-{size}` and `display-{size}` classes. Here’s how to use them:
 
-**Font Sizes:**
+### Heading Font Sizes:
 
 - Use `fs-1` for the `h1` font size.
 - Use `fs-2` for the `h2` font size.
@@ -101,7 +101,14 @@ The font sizes defined in the `$font-sizes` map can be utilized in your HTML by 
 - Use `fs-5` for the `h5` font size.
 - Use `fs-6` for the `h6` font size.
 - Use `fs-7` for the large title font size.
-- Use `fs-8` for the extra-large body font size.
+
+### Body Text Font Sizes:
+
+- Use `display-1` for the extra-large body font size.
+- Use `display-2` for the large body font size.
+- Use `display-3` for the medium body font size.
+- Use `display-4` for the small body font size.
+- Use `display-5` for the caption font size.
 
 ### Using Custom Opacity Classes
 
