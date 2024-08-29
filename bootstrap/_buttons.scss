@@ -133,20 +133,43 @@
       @include button-variant(
         $value,
         $value,
-        $hover-background: #fff,
-        $hover-border: shade-color($value, $btn-hover-border-shade-amount),
-        $active-background: shade-color($value, $btn-active-bg-shade-amount),
-        $active-border: shade-color($value, $btn-active-border-shade-amount),
-        $color: $tsa-light
+        $hover-background: $tsa-primary-300,
+        $hover-border: $tsa-primary-300,
+        $active-background: $tsa-primary-400,
+        $active-border: $tsa-primary-400,
+        $color: $tsa-light,
+        $disabled-background: rgba($tsa-dark-100, 0.3),
+        $disabled-border: rgba($tsa-dark-100, 0.3),
+        $disabled-color: $tsa-dark-100
       );
-    } @else if $color == 'dark' {
+    } @else if $color == 'secondary' {
       @include button-variant(
         $value,
         $value,
-        $hover-background: tint-color($value, $btn-hover-bg-tint-amount),
-        $hover-border: tint-color($value, $btn-hover-border-tint-amount),
-        $active-background: tint-color($value, $btn-active-bg-tint-amount),
-        $active-border: tint-color($value, $btn-active-border-tint-amount)
+        $hover-background: $tsa-secondary-150,
+        $hover-border: $tsa-secondary-150,
+        $active-background: $tsa-secondary-50,
+        $active-border: $tsa-secondary-50,
+        $active-color: $value,
+        $color: $tsa-light,
+        $disabled-background: rgba($tsa-dark-100, 0.3),
+        $disabled-border: rgba($tsa-dark-100, 0.3),
+        $disabled-color: $tsa-dark-100
+      );
+    } @else if $color == 'light' {
+      @include button-variant(
+        $value,
+        $value,
+        $hover-background: $tsa-primary-200,
+        $hover-border: $tsa-primary-200,
+        $hover-color: $value,
+        $active-background: $value,
+        $active-border: $value,
+        $active-color: $tsa-secondary-200,
+        $color: $tsa-secondary-200,
+        $disabled-background: rgba($tsa-dark-100, 0.3),
+        $disabled-border: rgba($tsa-dark-100, 0.3),
+        $disabled-color: $tsa-dark-100
       );
     } @else {
       @include button-variant($value, $value);

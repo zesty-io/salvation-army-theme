@@ -51,7 +51,9 @@ $theme-colors: (
 );
 
 $btn-colors: (
-  'primary': $tsa-primary-200
+  'primary': $tsa-primary-200,
+  'secondary': $tsa-secondary-200,
+  'light': $tsa-light
 );
 
 $body-color: $tsa-dark-100;
