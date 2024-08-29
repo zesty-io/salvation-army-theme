@@ -1,10 +1,9 @@
 @import 'mixins/banner';
 @include bsBanner('');
 
-@import 'abstracts/variables';
-
 // scss-docs-start import-stack
 // Configuration
+@import 'abstracts/variables';
 @import 'functions';
 @import 'variables';
 @import 'variables-dark';
