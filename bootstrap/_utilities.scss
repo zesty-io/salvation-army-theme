@@ -693,7 +693,8 @@ $utilities: map-merge(
               'body-secondary': var(--#{$prefix}secondary-color),
               'body-tertiary': var(--#{$prefix}tertiary-color),
               'body-emphasis': var(--#{$prefix}emphasis-color),
-              'reset': inherit
+              'reset': inherit,
+              'dark-50': rgba($tsa-dark-100, 0.6)
             )
           )
       ),
@@ -827,7 +828,8 @@ $utilities: map-merge(
             (
               'transparent': transparent,
               'body-secondary': rgba(var(--#{$prefix}secondary-bg-rgb), var(--#{$prefix}bg-opacity)),
-              'body-tertiary': rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity))
+              'body-tertiary': rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity)),
+              'dark-50': rgba($tsa-dark-100, 0.6)
             )
           )
       ),
