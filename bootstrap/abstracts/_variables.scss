@@ -195,8 +195,8 @@ $input-padding-y: 12px;
 $input-padding-x: 20px;
 
 $input-bg: $tsa-bg-area;
-$input-border-color: none;
-$input-focus-border-color: none;
+$input-border-color: $tsa-bg-area;
+$input-focus-border-color: rgba(28, 27, 31, 0.15);
 $input-focus-bg: rgba(28, 27, 31, 0.15);
 $input-focus-box-shadow: none;
 
