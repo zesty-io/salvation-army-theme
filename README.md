@@ -168,6 +168,7 @@ The box shadows defined in your SASS file can be utilized in your HTML by applyi
 
 ### Using Custom Border Radius Classes
 
+- **`$spacer = 1`**
 - **`rounded-0`**: `0` - No rounding.
 - **`rounded-1`**: `$spacer * 0.25` - A small rounding, equivalent to 25% of the spacer unit.
 - **`rounded-2`**: `$spacer * 0.5` - A moderate rounding, equivalent to 50% of the spacer unit.
