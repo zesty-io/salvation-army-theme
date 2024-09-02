@@ -126,21 +126,29 @@ $utilities: map-merge(
       ),
     'top': (
       property: top,
-      values: $position-values
+      values: (
+        map-merge($position-values, $spacers)
+      )
     ),
     'bottom': (
       property: bottom,
-      values: $position-values
+      values: (
+        map-merge($position-values, $spacers)
+      )
     ),
     'start': (
       property: left,
       class: start,
-      values: $position-values
+      values: (
+        map-merge($position-values, $spacers)
+      )
     ),
     'end': (
       property: right,
       class: end,
-      values: $position-values
+      values: (
+        map-merge($position-values, $spacers)
+      )
     ),
     'translate-middle': (
       property: transform,
