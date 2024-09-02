@@ -1,4 +1,4 @@
-## Table of Contents
+able of Contents
 
 1. [Project Setup](#project-setup)
 2. [Installation](#installation)
@@ -10,6 +10,7 @@
    - [Using Custom Font Size Classes](#using-custom-font-size-classes)
    - [Using Custom Opacity Classes](#using-custom-opacity-classes)
    - [Using Custom Box Shadow Classes](#using-custom-box-shadow-classes)
+   - [Using Custom Border Radius Classes](#using-custom-border-radius-classes)
 7. [Custom Button Components](#custom-button-components)
    - [Basic Button Styles](#basic-button-styles)
 
@@ -164,6 +165,28 @@ The box shadows defined in your SASS file can be utilized in your HTML by applyi
 - Use `shadow-sm` for a small box shadow: `0px 1px 2px 0px rgba(36, 104, 147, 0.04)`.
 - Use `shadow-lg` for a large box shadow: `0px 4px 8px 0px rgba(36, 104, 147, 0.04)`.
 - Use `shadow-xl` for an extra-large box shadow: `0px 8px 12px 0px rgba(36, 104, 147, 0.04)`.
+
+### Using Custom Border Radius Classes
+
+- **`rounded-0`**: `0` - No rounding.
+- **`rounded-1`**: `$spacer * 0.25` - A small rounding, equivalent to 25% of the spacer unit.
+- **`rounded-2`**: `$spacer * 0.5` - A moderate rounding, equivalent to 50% of the spacer unit.
+- **`rounded-3`**: `$spacer * 0.75` - Slightly larger rounding, equivalent to 75% of the spacer unit.
+- **`rounded-4`**: `$spacer` - A full spacer unit rounding.
+- **`rounded-5`**: `$spacer * 1.25` - A slightly larger rounding, equivalent to 125% of the spacer unit.
+- **`rounded-6`**: `$spacer * 1.5` - Larger rounding, equivalent to 150% of the spacer unit.
+- **`rounded-7`**: `$spacer * 1.75` - Even larger rounding, equivalent to 175% of the spacer unit.
+- **`rounded-8`**: `$spacer * 2` - Double the spacer unit for significant rounding.
+- **`rounded-9`**: `$spacer * 2.25` - Larger still, at 225% of the spacer unit.
+- **`rounded-10`**: `$spacer * 2.5` - Rounding at 250% of the spacer unit.
+- **`rounded-11`**: `$spacer * 2.75` - A softer edge with rounding at 275% of the spacer unit.
+- **`rounded-12`**: `$spacer * 3` - Rounding at 300% of the spacer unit.
+- **`rounded-14`**: `$spacer * 3.5` - Rounding at 350% of the spacer unit.
+- **`rounded-15`**: `$spacer * 3.75` - Rounding at 375% of the spacer unit.
+- **`rounded-16`**: `$spacer * 4` - Rounding at 400% of the spacer unit.
+- **`rounded-17`**: `$spacer * 4.25` - Rounding at 425% of the spacer unit.
+- **`rounded-18`**: `$spacer * 5` - Rounding at 500% of the spacer unit, creating very rounded edges.
+- **`rounded-19`**: `$spacer * 6` - Maximum rounding, equivalent to 600% of the spacer unit.
 
 # Custom Button Components
 
