@@ -13,6 +13,7 @@ able of Contents
    - [Using Custom Border Radius Classes](#using-custom-border-radius-classes)
 7. [Custom Button Components](#custom-button-components)
    - [Basic Button Styles](#basic-button-styles)
+8. [Custom Carousel Component](#carousel-component)
 
 # Project Setup
 
@@ -214,3 +215,214 @@ Use the following classes to create buttons with basic styles:
 <button class="btn btn-info btn-sm">Info Button</button>
 <button class="btn btn-light btn-sm">Light Button</button>
 ```
+
+# Carousel Component
+
+The Carousel component allows you to create a slideshow of items. Use the following classes and HTML structure to integrate a carousel into your webpage.
+
+### Basic Carousel Structure
+
+```html
+<article
+  class="my-3"
+  id="carousel"
+>
+  <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+    <h4>Carousel</h4>
+    <a
+      class="d-flex align-items-center"
+      href="https://getbootstrap.com/docs/5.3/components/carousel/"
+      >Documentation</a
+    >
+  </div>
+
+  <div>
+    <div class="bd-example-snippet bd-code-snippet">
+      <div class="bd-example m-0 border-0">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-control-container">
+            <button
+              class="carousel-control-prev hide"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span class="material-symbols-outlined">arrow_back</span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-label="Slide 1"
+                aria-current="true"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span class="material-symbols-outlined">arrow_forward</span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                width="800"
+                height="400"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: First slide"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="#777"
+                ></rect>
+                <text
+                  x="50%"
+                  y="50%"
+                  fill="#555"
+                  dy=".3em"
+                >
+                  First slide
+                </text>
+              </svg>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                width="800"
+                height="400"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Second slide"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="#666"
+                ></rect>
+                <text
+                  x="50%"
+                  y="50%"
+                  fill="#444"
+                  dy=".3em"
+                >
+                  Second slide
+                </text>
+              </svg>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <svg
+                class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
+                width="800"
+                height="400"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Placeholder: Third slide"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect
+                  width="100%"
+                  height="100%"
+                  fill="#555"
+                ></rect>
+                <text
+                  x="50%"
+                  y="50%"
+                  fill="#333"
+                  dy=".3em"
+                >
+                  Third slide
+                </text>
+              </svg>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+```
+
+### Carousel Controls
+
+- **Previous Button**: Moves the carousel to the previous slide.
+  - `class="carousel-control-prev"`: Style class for the previous button.
+  - `data-bs-slide="prev"`: Data attribute to specify the action.
+  - `<span class="material-symbols-outlined">arrow_back</span>`: Icon for the button.
+  - `aria-label="Previous"`: Accessible label.
+- **Next Button**: Moves the carousel to the next slide.
+  - `class="carousel-control-next"`: Style class for the next button.
+  - `data-bs-slide="next"`: Data attribute to specify the action.
+  - `<span class="material-symbols-outlined">arrow_forward</span>`: Icon for the button.
+  - `aria-label="Next"`: Accessible label.
+
+### Carousel Indicators
+
+- **Indicators**: Small buttons that indicate the current slide and allow navigation to a specific slide.
+  - `class="carousel-indicators"`: Container for the indicators.
+  - `<button type="button" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>`: Indicator for the first slide.
+  - `data-bs-slide-to="N"`: Specifies which slide the button corresponds to.
+  - `aria-current="true"`: Indicates the active slide.
+
+### Carousel Items
+
+- **Carousel Item**: Represents each slide within the carousel.
+  - `class="carousel-item"`: Style class for the item.
+  - `class="active"`: Indicates the currently visible slide.
+  - **Content**: Typically includes an image or other content along with optional captions.
+
+### Carousel Captions
+
+- **Caption**: Provides text and description for each slide.
+  - `class="carousel-caption d-none d-md-block"`: Style class for the caption.
+  - Contains elements like `<h5>` and `<p>` to provide slide labels and descriptions.
