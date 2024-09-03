@@ -11,6 +11,7 @@ able of Contents
    - [Using Custom Opacity Classes](#using-custom-opacity-classes)
    - [Using Custom Box Shadow Classes](#using-custom-box-shadow-classes)
    - [Using Custom Border Radius Classes](#using-custom-border-radius-classes)
+   - [Using Custom Position Classes](#positioning-classes)
 7. [Custom Button Components](#custom-button-components)
    - [Basic Button Styles](#basic-button-styles)
 8. [Custom Carousel Component](#cgit aarousel-component)
@@ -222,6 +223,54 @@ Below is a list of example values based on the `$spacer` unit, which defines the
   - **`rounded-17`**: `$spacer * 4.25` - Additional rounding, 425% of the spacer unit.
   - **`rounded-18`**: `$spacer * 5` - Very large rounding, 500% of the spacer unit.
   - **`rounded-19`**: `$spacer * 6` - Maximum rounding, 600% of the spacer unit.
+
+#### Positioning Classes
+
+- **`top`**
+  - **Property**: `top`
+  - **Values**: A combination of `$position-values` and `$spacers`
+  - **Description**: Applies a `top` offset to an element, pushing it downward from its normal position. The value is determined by merging predefined position values with spacer values.
+- **`bottom`**
+  - **Property**: `bottom`
+  - **Values**: A combination of `$position-values` and `$spacers`
+  - **Description**: Applies a `bottom` offset to an element, pulling it upward from its normal position. The value is determined by merging predefined position values with spacer values.
+- **`start`**
+  - **Property**: `left`
+  - **Class**: `start`
+  - **Values**: A combination of `$position-values` and `$spacers`
+  - **Description**: Applies a `left` offset to an element. This is used to position elements in left-to-right (LTR) layouts. The value is determined by merging predefined position values with spacer values.
+- **`end`**
+  - **Property**: `right`
+  - **Class**: `end`
+  - **Values**: A combination of `$position-values` and `$spacers`
+  - **Description**: Applies a `right` offset to an element. This is used to position elements in left-to-right (LTR) layouts. The value is determined by merging predefined position values with spacer values.
+
+#### Example Values Using `$position-values` and `$spacers`
+
+The values for these classes are defined by merging position values with spacer units. Below is an example of how these values might be structured:
+
+- **`$position-values`**: A map of predefined position values such as `0`, `auto`, or any specific offset values you define.
+- **`$spacers`**: A set of values defining standard spacing units.
+
+For instance:
+
+- **`top-0`**: `0` - No offset from the top.
+- **`top-1`**: A small offset, such as `$spacer * 0.25`.
+- **`top-2`**: A moderate offset, such as `$spacer * 0.5`.
+- **`top-3`**: A larger offset, such as `$spacer * 0.75`.
+
+Similarly, you can apply these values to the `bottom`, `start`, and `end` classes.
+
+### Using the Classes
+
+```html
+<div class="position-relative">
+  <div class="top-3">This element is offset 3 units from the top.</div>
+  <div class="bottom-2">This element is offset 2 units from the bottom.</div>
+  <div class="start-4">This element is offset 4 units from the start (left).</div>
+  <div class="end-5">This element is offset 5 units from the end (right).</div>
+</div>
+```
 
 # Custom Button Components
 
