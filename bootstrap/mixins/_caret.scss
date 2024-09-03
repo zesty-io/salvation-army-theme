@@ -26,6 +26,36 @@
   border-bottom: $width solid transparent;
 }
 
+@mixin caret-svg($direction: down, $width: 24px, $spacing: 0, $vertical-align: middle) {
+  &::after {
+    display: inline-block;
+    margin-left: $spacing;
+    vertical-align: $vertical-align;
+    content: '';
+    width: $width;
+    height: $width;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%231c1b1f"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>')
+      no-repeat center center;
+    background-size: contain;
+    @if $direction == down {
+      background-position: center center;
+    } @else if $direction == up {
+      background-position: center center;
+      transform: rotate(180deg);
+    } @else if $direction == end {
+      background-position: center center;
+      transform: rotate(-90deg);
+    } @else if $direction == start {
+      background-position: center center;
+      transform: rotate(90deg);
+    }
+  }
+
+  &:empty::after {
+    margin-left: 0;
+  }
+}
+
 @mixin caret(
   $direction: down,
   $width: $caret-width,
@@ -33,19 +63,7 @@
   $vertical-align: $caret-vertical-align
 ) {
   @if $enable-caret {
-    &::after {
-      display: inline-block;
-      margin-left: $spacing;
-      vertical-align: $vertical-align;
-      content: "";
-      @if $direction == down {
-        @include caret-down($width);
-      } @else if $direction == up {
-        @include caret-up($width);
-      } @else if $direction == end {
-        @include caret-end($width);
-      }
-    }
+    @include caret-svg($direction, $width, $spacing, $vertical-align);
 
     @if $direction == start {
       &::after {
@@ -56,14 +74,21 @@
         display: inline-block;
         margin-right: $spacing;
         vertical-align: $vertical-align;
-        content: "";
-        @include caret-start($width);
+        content: '';
+        width: $width;
+        height: $width;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%231c1b1f"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>')
+          no-repeat
+          center
+          center;
+        background-size: contain;
+        @if $direction == start {
+          background-position: center center;
+          transform: rotate(90deg);
+        }
       }
-    }
-
-    &:empty::after {
-      margin-left: 0;
     }
   }
 }
+
 // scss-docs-end caret-mixins
