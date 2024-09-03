@@ -52,6 +52,16 @@
   transform: translateX(-100%);
 }
 
+.carousel-control-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 //
 // Alternate transitions
@@ -79,46 +89,57 @@
   }
 }
 
-
 //
 // Left/right controls for nav
 //
 
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  // position: absolute;
+  // top: 0;
+  // bottom: 0;
   z-index: 1;
   // Use flex for alignment (1-3)
   display: flex; // 1. allow flex styles
   align-items: center; // 2. vertically center contents
   justify-content: center; // 3. horizontally center contents
   width: $carousel-control-width;
+  border-radius: 100%;
+  background-color: rgba($tsa-dark-100, 0.3);
   padding: 0;
   color: $carousel-control-color;
   text-align: center;
-  background: none;
   border: 0;
-  opacity: $carousel-control-opacity;
+  // opacity: $carousel-control-opacity;
+  width: 34px;
+  height: 34px;
   @include transition($carousel-control-transition);
+  margin: 0 16px;
 
   // Hover/focus state
   &:hover,
   &:focus {
-    color: $carousel-control-color;
-    text-decoration: none;
-    outline: 0;
-    opacity: $carousel-control-hover-opacity;
+    // color: $carousel-control-color;
+    // text-decoration: none;
+    // outline: 0;
+    // opacity: $carousel-control-hover-opacity;
   }
 }
 .carousel-control-prev {
   left: 0;
-  background-image: if($enable-gradients, linear-gradient(90deg, rgba($black, .25), rgba($black, .001)), null);
+  background-image: if(
+    $enable-gradients,
+    linear-gradient(90deg, rgba($black, 0.25), rgba($black, 0.001)),
+    null
+  );
 }
 .carousel-control-next {
   right: 0;
-  background-image: if($enable-gradients, linear-gradient(270deg, rgba($black, .25), rgba($black, .001)), null);
+  background-image: if(
+    $enable-gradients,
+    linear-gradient(270deg, rgba($black, 0.25), rgba($black, 0.001)),
+    null
+  );
 }
 
 // Icons for within
@@ -133,10 +154,12 @@
 }
 
 .carousel-control-prev-icon {
-  background-image: escape-svg($carousel-control-prev-icon-bg) #{"/*rtl:" + escape-svg($carousel-control-next-icon-bg) + "*/"};
+  background-image: escape-svg($carousel-control-prev-icon-bg) #{'/*rtl:' +
+    escape-svg($carousel-control-next-icon-bg) + '*/'};
 }
 .carousel-control-next-icon {
-  background-image: escape-svg($carousel-control-next-icon-bg) #{"/*rtl:" + escape-svg($carousel-control-prev-icon-bg) + "*/"};
+  background-image: escape-svg($carousel-control-next-icon-bg) #{'/*rtl:' +
+    escape-svg($carousel-control-prev-icon-bg) + '*/'};
 }
 
 // Optional indicator pips/controls
@@ -145,18 +168,23 @@
 // like a button) with data-bs-target for each slide your carousel holds.
 
 .carousel-indicators {
-  position: absolute;
+  // position: absolute;
+  background-color: rgba($tsa-dark-100, 0.3);
+  width: fit-content;
   right: 0;
-  bottom: 0;
+  bottom: 1rem;
   left: 0;
   z-index: 2;
   display: flex;
   justify-content: center;
   padding: 0;
   // Use the .carousel-control's width as margin so we don't overlay those
-  margin-right: $carousel-control-width;
+  // margin-right: $carousel-control-width;
   margin-bottom: 1rem;
-  margin-left: $carousel-control-width;
+  border-radius: 50px;
+  // margin-left: $carousel-control-width;
+  margin: 0;
+  padding: 2px 8px;
 
   [data-bs-target] {
     box-sizing: content-box;
@@ -171,6 +199,7 @@
     background-color: $carousel-indicator-active-bg;
     background-clip: padding-box;
     border: 0;
+    border-radius: 100%;
     // Use transparent borders to increase the hit area by 10px on top and bottom.
     border-top: $carousel-indicator-hit-area-height solid transparent;
     border-bottom: $carousel-indicator-hit-area-height solid transparent;
@@ -183,16 +212,15 @@
   }
 }
 
-
 // Optional captions
 //
 //
 
 .carousel-caption {
   position: absolute;
-  right: (100% - $carousel-caption-width) * .5;
+  right: (100% - $carousel-caption-width) * 0.5;
   bottom: $carousel-caption-spacer;
-  left: (100% - $carousel-caption-width) * .5;
+  left: (100% - $carousel-caption-width) * 0.5;
   padding-top: $carousel-caption-padding-y;
   padding-bottom: $carousel-caption-padding-y;
   color: $carousel-caption-color;
@@ -222,7 +250,7 @@
 
 @if $enable-dark-mode {
   @include color-mode(dark) {
-    @if $color-mode-type == "media-query" {
+    @if $color-mode-type == 'media-query' {
       .carousel {
         @include carousel-dark();
       }

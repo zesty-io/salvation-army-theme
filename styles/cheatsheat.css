@@ -165,3 +165,8 @@ body {
         z-index: 1;
     }
 }
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
