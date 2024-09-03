@@ -897,7 +897,7 @@ $utilities: map-merge(
       (
         property: border-radius,
         class: rounded,
-        values: $border-radii
+        values: $spacers
       ),
     'rounded-top': (
       property: border-top-left-radius border-top-right-radius,
