@@ -14,7 +14,7 @@ able of Contents
    - [Using Custom Position Classes](#positioning-classes)
 7. [Custom Button Components](#custom-button-components)
    - [Basic Button Styles](#basic-button-styles)
-8. [Custom Carousel Component](#cgit aarousel-component)
+8. [Custom Carousel Component](#carousel-component)
 
 # Project Setup
 
