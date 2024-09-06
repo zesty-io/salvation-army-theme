@@ -208,3 +208,11 @@ $carousel-indicator-height: 10px;
 $caret-width: 20px;
 $caret-vertical-align: -0.4em;
 $caret-spacing: 3px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1552px,
+  xxl: 1552px
+);
