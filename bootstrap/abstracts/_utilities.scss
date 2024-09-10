@@ -1,0 +1,132 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    'rounded': (
+      property: border-radius,
+      class: rounded,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-top': (
+      property: border-top-left-radius border-top-right-radius,
+      class: rounded-top,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-end': (
+      property: border-top-right-radius border-bottom-right-radius,
+      class: rounded-end,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-bottom': (
+      property: border-bottom-right-radius border-bottom-left-radius,
+      class: rounded-bottom,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-start': (
+      property: border-bottom-left-radius border-top-left-radius,
+      class: rounded-start,
+      values: $spacers,
+      responsive: true
+    ),
+    'position': (
+      property: position,
+      values: static relative absolute fixed sticky,
+      responsive: true
+    ),
+    'top': (
+      property: top,
+      responsive: true,
+      values: (
+        map-merge($position-values, $spacers)
+      )
+    ),
+    'bottom': (
+      property: bottom,
+      responsive: true,
+
+      values: (
+        map-merge($position-values, $spacers)
+      )
+    ),
+    'start': (
+      property: left,
+      class: start,
+      responsive: true,
+
+      values: (
+        map-merge($position-values, $spacers)
+      )
+    ),
+    'end': (
+      property: right,
+      class: end,
+      responsive: true,
+
+      values: (
+        map-merge($position-values, $spacers)
+      )
+    ),
+    'translate-middle': (
+      property: transform,
+      responsive: true,
+      class: translate-middle,
+      values: (
+        null: translate(-50%, -50%),
+        x: translateX(-50%),
+        y: translateY(-50%)
+      )
+    ),
+    'width': (
+      property: width,
+      class: w,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    'max-width': (
+      property: max-width,
+      class: mw,
+      values: (
+        100: 100%
+      )
+    ),
+    'font-size': (
+      rfs: true,
+      responsive: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes
+    ),
+    'font-weight': (
+      responsive: true,
+
+      property: font-weight,
+      class: fw,
+      values: (
+        lighter: $font-weight-lighter,
+        light: $font-weight-light,
+        normal: $font-weight-normal,
+        medium: $font-weight-medium,
+        semibold: $font-weight-semibold,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder
+      )
+    ),
+    'word-wrap': (
+      responsive: true,
+      property: word-wrap word-break,
+      class: text,
+      values: (
+        break: break-word
+      ),
+      rtl: false
+    )
+  )
+);
