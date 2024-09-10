@@ -20,3 +20,39 @@ $custom-bg-colors: (
 );
 
 $utilities-bg-colors: map-merge($utilities-bg-colors, $custom-bg-colors);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'rounded': (
+      property: border-radius,
+      class: rounded,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-top': (
+      property: border-top-left-radius border-top-right-radius,
+      class: rounded-top,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-end': (
+      property: border-top-right-radius border-bottom-right-radius,
+      class: rounded-end,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-bottom': (
+      property: border-bottom-right-radius border-bottom-left-radius,
+      class: rounded-bottom,
+      values: $spacers,
+      responsive: true
+    ),
+    'rounded-start': (
+      property: border-bottom-left-radius border-top-left-radius,
+      class: rounded-start,
+      values: $spacers,
+      responsive: true
+    )
+  )
+);
