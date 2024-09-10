@@ -81,6 +81,7 @@ $utilities: map-merge(
     ),
     'width': (
       property: width,
+      responsive: true,
       class: w,
       values: (
         25: 25%,
@@ -92,6 +93,8 @@ $utilities: map-merge(
     ),
     'max-width': (
       property: max-width,
+      responsive: true,
+
       class: mw,
       values: (
         100: 100%
@@ -121,6 +124,7 @@ $utilities: map-merge(
     ),
     'word-wrap': (
       responsive: true,
+
       property: word-wrap word-break,
       class: text,
       values: (
