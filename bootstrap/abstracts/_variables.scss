@@ -210,11 +210,15 @@ $caret-vertical-align: -0.4em;
 $caret-spacing: 3px;
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1552px,
-  xxl: 1552px
+  sm: 600px,
+  // increased from 540px
+  md: 800px,
+  // increased from 720px
+  lg: 1200px,
+  // increased from 960px
+  xl: 1600px,
+  // increased from 1552px
+  xxl: 1800px // increased from 1552px
 );
 
 $form-check-input-checked-border-color: $tsa-primary-200;
