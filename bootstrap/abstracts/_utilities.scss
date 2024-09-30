@@ -130,6 +130,23 @@ $utilities: map-merge(
         break: break-word
       ),
       rtl: false
+    ),
+    'background-color': (
+      responsive: true,
+      property: background-color,
+      class: bg,
+      local-vars: (
+        'bg-opacity': 1
+      ),
+      values:
+        map-merge(
+          $utilities-bg-colors,
+          (
+            'transparent': transparent,
+            'body-secondary': rgba(var(--#{$prefix}secondary-bg-rgb), var(--#{$prefix}bg-opacity)),
+            'body-tertiary': rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity))
+          )
+        )
     )
   )
 );
