@@ -108,7 +108,6 @@ $utilities: map-merge(
     ),
     'font-weight': (
       responsive: true,
-
       property: font-weight,
       class: fw,
       values: (
@@ -147,6 +146,12 @@ $utilities: map-merge(
             'body-tertiary': rgba(var(--#{$prefix}tertiary-bg-rgb), var(--#{$prefix}bg-opacity))
           )
         )
+    ),
+    'display': (
+      responsive: true,
+      property: font-size,
+      class: display,
+      values: $display-font-sizes
     )
   )
 );
