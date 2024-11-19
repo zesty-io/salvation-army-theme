@@ -100,6 +100,27 @@ $utilities: map-merge(
         100: 100%
       )
     ),
+    'height': (
+      property: height,
+      responsive: true,
+
+      class: h,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+      )
+    ),
+    'max-height': (
+      property: max-height,
+      responsive: true,
+      class: mh,
+      values: (
+        100: 100%
+      )
+    ),
     'font-size': (
       responsive: true,
       property: font-size,
