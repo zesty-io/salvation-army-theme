@@ -176,3 +176,16 @@ $utilities: map-merge(
     )
   )
 );
+
+@font-face {
+  font-family: 'AJensonPro';
+  src: url('https://8hxvw8tw.media.zestyio.com/AJensonPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.f-ajenson {
+  font-family: 'AJensonPro', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
