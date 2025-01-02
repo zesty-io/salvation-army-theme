@@ -106,6 +106,7 @@ The colors defined in the `$theme-colors` map can be utilized in your HTML by ap
 - Use `bg-dark-100` for a background color of `#1c1b1f`.
 - Use `bg-dark-50` for a background color of `#1c1b1f` with 50% opacity.
 - Use `bg-light` for a background color of `#fff`.
+- Use `bg-area` for a background color of `#efefef`.
 
 ## Using Custom Font Size Classes
 
