@@ -80,6 +80,7 @@ hr {
   font-family: $headings-font-family;
   font-style: $headings-font-style;
   // font-weight: $headings-font-weight;
+  font-weight: 400;
   line-height: $headings-line-height;
   color: var(--#{$prefix}heading-color);
 }
