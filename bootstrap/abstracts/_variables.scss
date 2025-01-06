@@ -226,3 +226,5 @@ $form-check-input-focus-box-shadow: $tsa-primary-200;
 
 $accordion-button-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$tsa-primary-400}' stroke='#{$tsa-primary-400}' viewBox='0 0 24 24'%3E%3Cpath d='M12 4v16m8-8H4'/%3E%3C/svg%3E") !default; // "add" icon
 $accordion-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$tsa-primary-400}' stroke='#{$tsa-primary-400}' viewBox='0 0 24 24'%3E%3Cpath d='M20 12H4'/%3E%3C/svg%3E") !default; // "remove" icon
+
+$headings-margin-bottom: $spacer * 1.25;
