@@ -72,7 +72,7 @@
 
       &::before {
         display: inline-block;
-        margin-right: $spacing;
+        margin-right: 0;
         vertical-align: $vertical-align;
         content: '';
         width: $width;
