@@ -39,7 +39,9 @@
 }
 .input-group:focus-within .input-group-text,
 .form-control:focus ~ .input-group-append .input-group-text {
-  background: rgba(28, 27, 31, 0.15);
+  background: $tsa-bg-area;
+  box-shadow: none !important;
+  border-color: transparent !important;
 }
 // Textual addons
 //
