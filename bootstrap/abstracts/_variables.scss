@@ -64,6 +64,7 @@ $body-color: $tsa-dark-100;
 
 $spacer: 1rem;
 $spacers: (
+  null: $spacer,
   0: 0,
   1: $spacer * 0.25,
   2: $spacer * 0.5,
@@ -234,3 +235,5 @@ $dropdown-padding-y: 0.5rem;
 
 $dropdown-link-active-color: $tsa-dark;
 $dropdown-link-active-bg: $tsa-bg-area;
+
+$enable-negative-margins: true;
