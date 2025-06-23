@@ -59,6 +59,27 @@ To use the custom Bootstrap CSS file, include the following link in your HTML he
 />
 ```
 
+## Using Google Material Icons
+
+To include Google's Material Icons in your project, add the following `<link>` tags to your HTML `<head>` section:
+
+```html
+<!-- Standard Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Outlined Material Symbols (used in Carousel controls) -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+```
+
+You can then use the icons in your HTML like this:
+```html
+<!-- Standard icon -->
+<i class="material-icons">face</i>
+
+<!-- Outlined icon -->
+<span class="material-symbols-outlined">arrow_back</span>
+```
+
 ## Previewing the Cheatsheet
 
 ### Option 1: Open with a Browser
